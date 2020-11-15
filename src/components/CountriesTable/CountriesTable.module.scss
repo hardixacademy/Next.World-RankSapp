@@ -1,0 +1,153 @@
+.heading {
+    display: flex;
+    padding: 20px;
+
+    &__flag {
+        flex: 1;
+        margin-right: 15px;
+    }
+
+    &__name {
+        flex: 4;
+        padding: 10px;
+        color: var(--text-secondary);
+        text-align: left;
+        font-weight: 500;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__population {
+        flex: 4;
+        padding: 10px;
+        color: var(--text-secondary);
+        font-weight: 500;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__area {
+        flex: 4;
+        padding: 10px;
+        color: var(--text-secondary);
+        font-weight: 500;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__gini {
+        flex: 4;
+        padding: 10px;
+        color: var(--text-secondary);
+        font-weight: 500;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__arrow {
+        color: var(--primary-color);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 2px;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: var(--background-color-light);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    &__name {
+        flex: 4;
+        text-align: left;
+    }
+
+    &__population {
+        flex: 4;
+    }
+
+    &__area {
+        flex: 4;
+    }
+
+    &__gini {
+        flex: 4;
+    }
+
+    &__flag {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin-right: 15px;
+
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .heading {
+        &__flag {
+            display: none;
+        }
+
+        &__area {
+            display: none;
+        }
+
+        &__gini {
+            display: none;
+        }
+    }
+
+    .country {
+        &__area {
+            display: none;
+        }
+
+        &__gini {
+            display: none;
+        }
+
+        &__flag {
+            display: none;
+        }
+    }
+}
